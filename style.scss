@@ -1,0 +1,154 @@
+@font-face {
+    font-family: 'Yeseva-one';
+    src: url("./assets/fonts/Yeseva\ One\ Regular.ttf") format('truetype');
+    font-weight: lighter;
+    // font-style: normal;
+}
+
+@font-face {
+    font-family: 'FuturaBookC';
+    src: url("./assets/fonts/futurabookc.otf") format('truetype');
+    font-weight: lighter;
+    // font-style: normal;
+}
+
+
+$base-color: #E3B873;
+$background-color: #131313;
+$font-color: white;
+
+$font-family-headers: 'Yeseva-one';
+$font-family-main: 'FuturaBookC';
+
+body {
+    font-family: $font-family-main;
+    color: $base-color;
+    background: $background-color;
+    padding: 0; 
+    margin: 0;
+
+    h1 {
+        font-family: $font-family-headers;
+        font-size: 1.8rem;
+        font-weight: lighter;
+        text-transform: uppercase;
+        letter-spacing: 2px;;
+        color: $font-color;
+        margin: 0;
+
+        span {
+            color: $base-color;
+        }
+    }
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 30px;
+
+    a {
+        color: $base-color;
+    }
+
+    h4 {
+        text-transform: uppercase;
+        font-size: 0.85rem;
+        letter-spacing: 1px;
+    }
+
+    .btn {
+        padding: 10px 30px;
+    }
+}
+
+%btn-shared { 
+    background: $base-color;
+    padding: 15px 0;
+    width: 15%;
+    border: none;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    border-radius: 2px;
+    color: $font-color;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.7rem;
+}
+
+.btn {
+    @extend %btn-shared;
+}
+
+.btn_second {
+    @extend %btn-shared;
+    border: 1px solid $font-color;
+    background: none;
+    box-shadow: none;
+}
+
+.menu_page_switcher {
+    display: flex;
+    font-size: 0.85rem;
+    li {
+        padding: 0 30px 0 0;
+        list-style: none;
+
+        a {
+            text-decoration: none;
+            color: $font-color;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+
+            &.menu_page_switcher--item--link-selected {
+                color: $base-color;
+            }
+        }
+    } 
+}
+
+.main_screen {
+    padding: 30vh 0 30vh 30vh;
+
+    img {
+        position: absolute;
+        opacity: 0.3;
+        width: 96%;
+        right: 0;
+        top: 90px;
+        z-index: -1;
+    }
+
+    aside {
+        position: absolute;
+        transform: rotate(90deg);
+        
+        p {
+            // transform: rotate(90deg);
+            color: $base-color;
+        }
+
+        div {
+            border-top: 1px solid $base-color;
+            width: 40px;
+            // transform: rotate(90deg);
+        }
+    }
+
+    p {
+        width: 40%;
+        font-family: $font-family-main;
+        font-weight: lighter;
+        font-size: 1.1rem;
+        line-height: 30px;
+        color: $font-color;
+    }
+
+    .buttons {
+        margin: 45px 0 0 0;
+
+        .btn {
+            margin-right: 20px;
+        }
+    }
+}
