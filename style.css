@@ -163,9 +163,56 @@ header, footer {
     display: flex;
     flex-direction: column; }
 
+.circle {
+  width: 500px;
+  height: 500px;
+  -moz-border-radius: 250px;
+  -webkit-border-radius: 250px;
+  border: 4px solid #E3B873;
+  border-radius: 250px; }
+
+.num {
+  width: 50px;
+  height: 50px;
+  background: #E3B873;
+  color: white;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px; }
+
 .section_usp {
   display: grid;
   grid-template-columns: 5fr 3fr; }
+  .section_usp .wrapper_circle {
+    display: flex;
+    position: relative; }
+    .section_usp .wrapper_circle .circle {
+      position: relative;
+      left: -120px; }
+    .section_usp .wrapper_circle .numbers {
+      position: relative;
+      right: 90px;
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end; }
+      .section_usp .wrapper_circle .numbers--element-1 {
+        right: 115px;
+        position: relative;
+        margin: 30px 0; }
+      .section_usp .wrapper_circle .numbers--element-2 {
+        right: 60px;
+        position: relative;
+        margin: 30px 0; }
+      .section_usp .wrapper_circle .numbers--element-3 {
+        right: 60px;
+        position: relative;
+        margin: 30px 0; }
+      .section_usp .wrapper_circle .numbers--element-4 {
+        right: 120px;
+        position: relative;
+        margin: 30px 0; }
   .section_usp form {
     grid-column: 2;
     display: flex;
