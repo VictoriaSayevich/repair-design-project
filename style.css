@@ -74,6 +74,10 @@ body {
     font-size: 1.1rem;
     line-height: 30px;
     color: white; }
+  body a:hover {
+    opacity: 0.6; }
+  body button:hover {
+    opacity: 0.6; }
 
 header, footer {
   display: flex;
@@ -186,15 +190,16 @@ header, footer {
 
 .section_online_control {
   background: white;
-  padding-bottom: 90px; }
-  .section_online_control .background {
+  padding: 90px 0; }
+  .section_online_control .background_block {
+    position: relative;
     width: 100%;
     height: 450px;
-    margin: -240px;
+    top: -240px;
     background: white;
     z-index: -1; }
   .section_online_control h2 {
-    color: white; }
+    color: #131313; }
   .section_online_control img {
     padding: 20px 0; }
   .section_online_control .video img {
@@ -240,21 +245,14 @@ header, footer {
         color: #131313; }
 
 .circle {
-  width: 500px;
-  height: 500px;
-  -moz-border-radius: 250px;
-  -webkit-border-radius: 250px;
-  border: 4px solid #E3B873;
-  border-radius: 250px; }
-
-.num {
-  width: 50px;
-  height: 50px;
-  background: #E3B873;
-  color: white;
-  -moz-border-radius: 50px;
-  -webkit-border-radius: 50px;
-  border-radius: 50px; }
+  width: 600px;
+  height: 600px;
+  /* -moz-border-radius: 250px; */
+  /* -webkit-border-radius: 250px; */
+  border: 5px solid #E3B873;
+  border-radius: 300px;
+  position: relative;
+  left: -120px; }
 
 .section_usp {
   display: grid;
@@ -266,9 +264,13 @@ header, footer {
     position: relative;
     background-image: url("./assets/images/image 6.1.png");
     background-repeat: no-repeat; }
-    .section_usp .wrapper_circle .circle {
-      position: relative;
-      left: -120px; }
+    .section_usp .wrapper_circle .circle_number {
+      width: 50px;
+      height: 50px;
+      background: #E3B873;
+      -moz-border-radius: 50px;
+      -webkit-border-radius: 50px;
+      border-radius: 50px; }
     .section_usp .wrapper_circle .numbers {
       position: relative;
       right: 90px;
@@ -277,22 +279,30 @@ header, footer {
       flex-direction: column;
       justify-content: center;
       align-items: flex-end; }
-      .section_usp .wrapper_circle .numbers--element-1 {
-        right: 115px;
-        position: relative;
-        margin: 30px 0; }
-      .section_usp .wrapper_circle .numbers--element-2 {
-        right: 60px;
-        position: relative;
-        margin: 30px 0; }
-      .section_usp .wrapper_circle .numbers--element-3 {
-        right: 60px;
-        position: relative;
-        margin: 30px 0; }
-      .section_usp .wrapper_circle .numbers--element-4 {
-        right: 120px;
-        position: relative;
-        margin: 30px 0; }
+    .section_usp .wrapper_circle .circle_number.num1 {
+      right: 110px;
+      position: relative;
+      margin: 30px 0;
+      display: flex; }
+    .section_usp .wrapper_circle .circle_number.num2 {
+      right: 60px;
+      position: relative;
+      margin: 30px 0;
+      display: flex; }
+    .section_usp .wrapper_circle .circle_number.num3 {
+      right: 60px;
+      position: relative;
+      margin: 30px 0;
+      display: flex; }
+    .section_usp .wrapper_circle .circle_number.num4 {
+      right: 100px;
+      position: relative;
+      margin: 30px 0;
+      display: flex; }
+    .section_usp .wrapper_circle .num_text {
+      color: #131313;
+      font-size: 0.5rem;
+      line-height: 1; }
   .section_usp form {
     grid-column: 2;
     display: flex;
@@ -302,8 +312,7 @@ header, footer {
       display: flex; }
   .section_usp .my_text {
     display: flex;
-    align-items: center;
-    grid-column: 2; }
+    align-items: center; }
 
 .article_text--element {
   z-index: 1;
@@ -331,7 +340,8 @@ header, footer {
   letter-spacing: 1px; }
 
 .section_types_of_repair {
-  background: white; }
+  background: white;
+  padding-bottom: 120px; }
   .section_types_of_repair h2 {
     color: #131313; }
   .section_types_of_repair img {
@@ -388,7 +398,7 @@ header, footer {
 
 .section_design_projects {
   background: white;
-  padding: 90px 0 0 0; }
+  padding: 90px 0; }
   .section_design_projects h2 {
     color: #131313; }
   .section_design_projects img {
@@ -414,26 +424,59 @@ header, footer {
   padding: 50px;
   display: grid;
   grid-template-columns: 3fr 5fr; }
+  .section_steps_working--article .h5_pred {
+    font-family: "FuturaBookC";
+    padding-bottom: 10px; }
+  .section_steps_working--article h3 {
+    font-size: 1.2rem;
+    font-family: "Yeseva-one"; }
   .section_steps_working--article h5 {
     margin: 0;
     padding: 0;
-    font-size: 0.9rem;
-    color: white; }
+    padding-top: 40px;
+    padding-bottom: 10px;
+    font-size: 1rem;
+    color: white;
+    font-family: "Yeseva-one"; }
+  .section_steps_working--article h4 {
+    padding: 0;
+    margin: 0;
+    font-size: 0.8rem;
+    line-height: 1.2;
+    letter-spacing: 2px;
+    font-family: "Yeseva-one";
+    text-transform: uppercase; }
+  .section_steps_working--article img {
+    width: 100%; }
+  .section_steps_working--article .p_steps {
+    padding-right: 20px; }
   .section_steps_working--article--steps {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; }
-    .section_steps_working--article--steps-item h6 {
-      padding: 0;
-      margin: 0;
-      font-size: 1rem;
-      color: rgba(255, 255, 255, 0.7);
-      text-decoration: underline; }
-    .section_steps_working--article--steps-item-selected h6 {
-      padding: 0;
-      margin: 0;
-      font-size: 1rem;
-      color: white;
-      text-decoration: underline; }
+    .section_steps_working--article--steps-item {
+      color: rgba(255, 255, 255, 0.3); }
+      .section_steps_working--article--steps-item h6 {
+        padding: 0;
+        margin: 0;
+        font-size: 1rem;
+        color: rgba(255, 255, 255, 0.3);
+        text-decoration: underline; }
+      .section_steps_working--article--steps-item p {
+        color: rgba(255, 255, 255, 0.3);
+        padding: 0;
+        margin: 0;
+        font-size: 1rem;
+        padding-bottom: 20px; }
+      .section_steps_working--article--steps-item-selected h6 {
+        padding: 0;
+        margin: 0;
+        font-size: 1rem;
+        color: white;
+        text-decoration: underline; }
+      .section_steps_working--article--steps-item-selected p {
+        margin: 0;
+        padding-bottom: 20px;
+        color: white; }
 
 .article_text_team--element {
   margin: 0 20px;
@@ -468,7 +511,17 @@ header, footer {
   padding: 0; }
 
 .section_our_team {
-  background: white; }
+  background: white;
+  padding: 90px 0; }
+  .section_our_team h2 {
+    color: #131313; }
+  .section_our_team .team_img_icon {
+    padding: 20px 0; }
+  .section_our_team .team_p {
+    color: #131313;
+    width: 45%;
+    text-align: center;
+    padding: 0; }
   .section_our_team--article {
     display: flex; }
     .section_our_team--article-item {
@@ -492,7 +545,7 @@ header, footer {
     color: #131313;
     font-size: 1rem;
     padding-left: 20px; }
-  .clients_name .circle {
+  .clients_name .circle_client {
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -503,6 +556,15 @@ header, footer {
 
 .section_our_clients {
   background: white; }
+  .section_our_clients .header_clients {
+    color: #131313; }
+  .section_our_clients .img_icon_cliets {
+    padding: 20px 0; }
+  .section_our_clients .p_clients {
+    color: #131313;
+    width: 45%;
+    text-align: center;
+    padding: 0; }
   .section_our_clients--element {
     display: flex;
     justify-content: center; }
@@ -527,7 +589,8 @@ header, footer {
         .section_our_clients--element .my_label p:first-child {
           border-right: 1px solid white; }
         .section_our_clients--element .my_label p img {
-          padding: 0 10px; }
+          padding: 0 10px;
+          width: 20%; }
     .section_our_clients--element .article_text--element {
       padding: 30px; }
       .section_our_clients--element .article_text--element p {
@@ -537,37 +600,46 @@ header, footer {
 
 .my_form {
   width: 80%;
+  height: 70%;
   background: #131313;
   color: white;
   display: flex;
   flex-direction: column;
   padding: 0 10px; }
+  .my_form .agreement {
+    padding-left: 10px; }
   .my_form p {
+    margin: 0 auto;
+    padding-top: 20px;
     width: 50%;
     line-height: 1.3;
     text-align: center; }
   .my_form .btn {
     width: 200px;
     position: relative;
-    right: 0; }
-  .my_form fieldset label {
-    opacity: 0.5;
-    letter-spacing: 1px;
-    font-size: 0.8rem;
-    padding: 5px 0; }
-  .my_form fieldset input {
-    border: none;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    padding: 3px 0;
-    width: 320px;
-    background: none;
-    margin-bottom: 20px; }
-    .my_form fieldset input::placeholder {
-      color: white;
-      font-family: "FuturaBookC";
-      padding: 5px 0;
-      font-size: 1rem;
-      letter-spacing: 1px; }
+    right: 0;
+    margin-top: 20px;
+    margin-left: 40%; }
+  .my_form fieldset {
+    padding-bottom: 40px; }
+    .my_form fieldset label {
+      opacity: 0.5;
+      letter-spacing: 1px;
+      font-size: 0.8rem;
+      padding: 5px 0; }
+    .my_form fieldset input {
+      border: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 3px 0;
+      width: 320px;
+      background: none;
+      margin-bottom: 20px; }
+      .my_form fieldset input::placeholder {
+        color: white;
+        font-family: "FuturaBookC";
+        padding: 5px 0;
+        font-size: 1rem;
+        letter-spacing: 1px; }
 
 .section_form_question {
   background: white;
