@@ -710,17 +710,74 @@ header, footer {
     }
 }
 
+.clients_name {
+    display: flex;
+    h4 {
+        font-family: $font-family-headers;
+        color: $background-color;
+        font-size: 1rem;
+        padding-left: 20px;
+    }
+    .circle {
+        width: 70px; 
+        height: 70px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 0 auto;
+        border: none;
+        margin: 0;
+    }
+}
+
 .section_our_clients {
     @extend %section-shared;
+    background: $background-color-article;
+
+
 
     &--element {
         display: flex;
+        justify-content: center;
 
-
-        &-item .my_label  {
+        .article_text {
+            margin: 0 20px;
+            width: 25%;
+        }
+        .my_label {
             display: flex;
+            margin-top: -40px;
+            z-index: 30;
+            position: relative;
+
             p {
+                width: 40%;
                 display: flex;
+                background: $base-color;
+                color: $font-color;
+                font-size: 0.9rem;
+                padding: 10px;
+                font-family: $font-family-headers;
+                letter-spacing: 1px;
+                box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
+
+                &:first-child {
+                    border-right: 1px solid $font-color;
+                }
+
+                img {
+                    padding: 0 10px;
+                }
+
+            }
+        }
+
+
+        .article_text--element  {
+            padding: 30px;
+            p {
+                color: rgba(0, 0, 0, 0.5);
+                font-size: 0.8rem;
+                line-height: 2;
             }
         }
     }

@@ -465,12 +465,55 @@ header, footer {
       .section_our_team--article-item .article_text_team--element {
         margin-top: -50px; }
 
-.section_our_clients--element {
+.clients_name {
   display: flex; }
-  .section_our_clients--element-item .my_label {
-    display: flex; }
-    .section_our_clients--element-item .my_label p {
-      display: flex; }
+  .clients_name h4 {
+    font-family: "Yeseva-one";
+    color: #131313;
+    font-size: 1rem;
+    padding-left: 20px; }
+  .clients_name .circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    border: none;
+    margin: 0; }
+
+.section_our_clients {
+  background: white; }
+  .section_our_clients--element {
+    display: flex;
+    justify-content: center; }
+    .section_our_clients--element .article_text {
+      margin: 0 20px;
+      width: 25%; }
+    .section_our_clients--element .my_label {
+      display: flex;
+      margin-top: -40px;
+      z-index: 30;
+      position: relative; }
+      .section_our_clients--element .my_label p {
+        width: 40%;
+        display: flex;
+        background: #E3B873;
+        color: white;
+        font-size: 0.9rem;
+        padding: 10px;
+        font-family: "Yeseva-one";
+        letter-spacing: 1px;
+        box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5); }
+        .section_our_clients--element .my_label p:first-child {
+          border-right: 1px solid white; }
+        .section_our_clients--element .my_label p img {
+          padding: 0 10px; }
+    .section_our_clients--element .article_text--element {
+      padding: 30px; }
+      .section_our_clients--element .article_text--element p {
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 0.8rem;
+        line-height: 2; }
 
 .my_form {
   width: 80%;
