@@ -24,7 +24,8 @@
         <button class="btn" class="btn">Request call</button>
     </header>
     <section class="main_screen">
-        <img src="./assets/images/image 4.3.png" alt="главное изображение">
+        <div class="img_effect"></div>
+        <!-- <img src="./assets/images/image 4.3.png" alt="главное изображение"> -->
         <article>
             <h1>Turkney repair in the <br>city of <span>rostov-on-don</span></h1>
             <p>Get ready-made turnkey repairs on time <br> with work time saving up to 45 days and 20% from <br> cost of materials due to the organization of work</p>
@@ -39,36 +40,46 @@
         </div>
     </section>
     <section class="second_screen">
+        <div></div>
         <nav>
-            <ul>
-                <li><a href="#">Rostov-on-Don, Admiral</a></li>
-                <li><a href="#">Sochi Thieves</a></li>
-                <li><a href="#">Rostov-on-Don Patriotic</a></li>
+            <ul class="menu_projects_switcher">
+                <li class="menu_projects_switcher--item"><a class="menu_projects_switcher--item--link-selected" href="#">Rostov-on-Don, Admiral</a></li>
+                <li class="menu_projects_switcher--item"><a class="menu_projects_switcher--item--link" href="#">Sochi Thieves</a></li>
+                <li class="menu_projects_switcher--item"><a class="menu_projects_switcher--item--link" href="#">Rostov-on-Don Patriotic</a></li>
             </ul>
         </nav>
-        <h2>Completed projects</h2>
-        <p>Only a small part of the work performed by our company is presented on the site. 
-            For 14 years on in the construction market we have made happy more than 1000 families</p>
-        <article>
-            <h3>City:</h3>
-            <p>Rostov-on-Don LCD admiral</p>
+        <article class="article_completed_projects">
+            <h2>Completed <br>projects</h2>
+            <p>Only a small part of the work performed by our company is presented on the site. 
+                    For 14 years on in the construction market we have made happy more than 1000 families</p>
+            <div class="article_completed_projects--menu">
+                <div>
+                    <h3>City:</h3>
+                    <p>Rostov-on-Don LCD admiral</p>
+                </div>
+                
+                <div>
+                    <h3>apartment area:</h3>
+                    <p>81 m2</p>
+                </div>
 
-            <h3>apartment area:</h3>
-            <p>81 m2</p>
+                <div>
+                    <h3>Repair time:</h3>
+                    <p>3.5 months</p>
+                </div>
 
-            <h3>Repair time:</h3>
-            <p>3.5 months</p>
-            
-            <h3>Repair Cost:</h3>
-            <p>Upon request</p>
+                <div> 
+                    <h3>Repair Cost:</h3>
+                    <p>Upon request</p>
+                </div>
+            </div>
         </article>
-
         <div class="slider">
             <img src="./assets/images/image 2.1.png" alt="фото интерьера1">
-            <img src="./assets/images/image 2.png" alt="фото интерьера2">
+            <!-- <img src="./assets/images/image 2.png" alt="фото интерьера2"> -->
         </div>
         </section>
-        <section>
+        <section class="section_online_control">
             <h3>online control</h3>
             <img src="./assets/images/icon_control.png" alt="камера наблюдения">
             <div class="video">
@@ -79,21 +90,25 @@
                 You can watch the live broadcast from one of our facilities! 
                 Leave a request below and you will receive a link to the broadcast.</p>
             <form action="#">
-                <fieldset>
-                    <label for="name">Name</label><input type="text" id="name" placeholder="What is your name:">
-                    <label for="phone">Phone</label><input type="text" id="phone" placeholder="Your phone number:">
+                <div class="my_fieldset">
+                    <div>
+                        <label for="name">Name</label><input type="text" id="name" placeholder="What is your name:">
+                    </div>
+                    <div>
+                        <label for="phone">Phone</label><input type="text" id="phone" placeholder="Your phone number:">
+                    </div>
                     <button class="btn">Submit</button>
-                </fieldset>
+                </div>
                 <input type="checkbox" id="agreement"><label for="agreemnet">I agree to the processing of personal data</label>
             </form>
         </section>
-        <section>
+        <section class="section_types_of_repair">
             <h3>types of repair</h3>
             <img src="./assets/images/icon_repair.png" alt="ремонт">
-            <article>
-                <div>
+            <article class="section_types_of_repair--article">
+                <div class="section_types_of_repair--article-item">
                     <img src="./assets/images/image.png" alt="интерьер 1">
-                    <article>
+                    <article class="article_text">
                         <h4>Redecorating</h4>
                         <ul>
                             <li>Dismantling of old coatings</li>
@@ -107,9 +122,9 @@
                         <button class="btn">from 900 rub / m2</button>
                     </article>
                 </div>
-                <div>
+                <div class="section_types_of_repair--article-item">
                     <img src="./assets/images/image 3.png" alt="интерьер 2">
-                    <article>
+                    <article class="article_text">
                         <h4>Overhaul</h4>
                         <ul>
                             <li>Dismantling of old coatings</li>
@@ -123,10 +138,10 @@
                         <button class="btn">from 1800 rub / m2</button>
                     </article>
                 </div>
-                <div>
+                <div class="section_types_of_repair--article-item">
                     <img src="./assets/images/image 3 (1).png" alt="интерьер 3">
-                    <article>
-                        <h4></h4>
+                    <article class="article_text">
+                        <h4>Designer Repair</h4>
                         <ul>
                             <li>Dismantling of old coatings</li>
                             <li>Wallpapering</li>
@@ -141,7 +156,7 @@
                 </div>
             </article>
         </section>
-        <section>
+        <section class="section_usp">
             <article>
                 <img src="./assets/images/image 6.1.png" alt="фото здание">
                 <ol>
@@ -153,8 +168,8 @@
                 </ol>
             </article>
             <form action="#">
+                <p>Leave a request for free departure of the measurer</p>
                 <fieldset>
-                    <legend>Leave a request for free departure of the measurer</legend>
                     <label for="name">Name</label>
                     <input type="text" id="name" placeholder="What is your name:">
 
@@ -164,43 +179,51 @@
                     <label for="email">Email</label>
                     <input type="text" id="email" placeholder="Your email">
                 </fieldset>
-                <input type="checkbox" id="agreement"><label for="agreemnet">I agree to the processing of personal data</label>
-                <button class="btn">Call the measurer</button>
-                <div>
-                    <img src="./assets/images/icon_coinsaver.png" alt="копилка">
-                    <p>Help save 10 - 20% of the cost of materials</p>
+                <div class="agreement">
+                    <input type="checkbox" id="agreement"><label for="agreemnet">I agree to the processing of personal data</label>
                 </div>
+                <button class="btn">Call the measurer</button>
             </form>
-        </section>
-        <section>
-            <h2>We realize your wildest fantasies</h2>
-            <ul>
-                <li><a href="#" type="active">American classic</a></li>
-                <li><a href="#">Empire</a></li>
-                <li><a href="#">Classical</a></li>
-                <li><a href="#">Loft</a></li>
-                <li><a href="#">Minimalism</a></li>
-                <li><a href="#">Provence</a></li>
-                <li><a href="#">Romanticism</a></li>
-                <li><a href="#">Scandinavian style</a></li>
-                <li><a href="#">Mediterranean style</a></li>
-                <li><a href="#">High tech</a></li>
-                <li><a href="#">Eclecticism</a></li>
-            </ul>
-            <div>
-                <img src="./assets/images/image 5.png" alt="интерьер 1">
-                <img src="./assets/images/image 5 (1).png" alt="интерьер 2">
-                <img src="./assets/images/image 5 (2).png" alt="интерьер 3">
-                <img src="./assets/images/image 5 (3).png" alt="интерьер 4">
+            <div class="my_text">
+                <img src="./assets/images/icon_coinsaver.png" alt="копилка">
+                <p>Help save 10 - 20% of the cost of materials</p>
             </div>
         </section>
-        <section>
+        <section class="section_types_interior">
+            <article class="section_types_interior--article">
+                <h2>We realize your wildest fantasies</h2>
+                <ul>
+                    <li><a href="#" type="active">American classic</a></li>
+                    <li><a href="#">Empire</a></li>
+                    <li><a href="#">Classical</a></li>
+                    <li><a href="#">Loft</a></li>
+                    <li><a href="#">Minimalism</a></li>
+                    <li><a href="#">Provence</a></li>
+                    <li><a href="#">Romanticism</a></li>
+                    <li><a href="#">Scandinavian style</a></li>
+                    <li><a href="#">Mediterranean style</a></li>
+                    <li><a href="#">High tech</a></li>
+                    <li><a href="#">Eclecticism</a></li>
+                </ul>
+            </article>
+            <div class="section_types_interior--img_elements">
+                <div class="item1"> 
+                    <img src="./assets/images/image 5 (1).png" alt="интерьер 1">
+                    <img src="./assets/images/image 5 (3).png" alt="интерьер 2">
+                </div>
+                <div class="item2">
+                    <img src="./assets/images/image 5.png" alt="интерьер 3">
+                    <img src="./assets/images/image 5 (2).png" alt="интерьер 4">
+               </div>
+            </div>
+        </section>
+        <section class="section_design_projects">
             <h3>design project</h3>
             <img src="./assets/images/icon_projects.png" alt="проекты">
-            <article>
-                <div>
+            <article class="section_design_projects--article">
+                <div class="section_design_projects--article-item">
                     <img src="./assets/images/image.png" alt="интерьер 1">
-                    <article>
+                    <article class="article_text">
                         <h4>Mini</h4>
                         <ul>
                             <li>Measurement drawing</li>
@@ -211,9 +234,9 @@
                         <button class="btn">150 rub / m2</button>
                     </article>
                 </div>
-                <div>
+                <div class="section_design_projects--article-item"> 
                     <img src="./assets/images/image 3.png" alt="интерьер 2">
-                    <article>
+                    <article class="article_text">
                         <h4>Standard</h4>
                         <ul>
                             <li>Measurement drawing</li>
@@ -227,9 +250,9 @@
                         <button class="btn">400 rub / m2</button>
                     </article>
                 </div>
-                <div>
+                <div class="section_design_projects--article-item">
                     <img src="./assets/images/image 3 (1).png" alt="интерьер 3">
-                    <article>
+                    <article class="article_text">
                         <h4>Full</h4>
                         <ul>
                             <li>Measurement drawing</li>
@@ -250,82 +273,86 @@
                 </div>
             </article>
         </section>  
-        <section>
-            <h5>How we are working</h5>
-            <h3>6 steps to the goal</h3>
-            <div class="steps">
-                <div class="step">
-                    <h6>01</h6>
-                    <p>Departure to room measurements</p>
-                </div>
-                <div class="step">
-                    <h6>02</h6>
-                    <p>Compilation estimates</p>
-                </div>
-                <div class="step">
-                    <h6>03</h6>
-                    <p>Development project design</p>
-                </div>
-                <div class="step">
-                    <h6>04</h6>
-                    <p>Purchasing Supplies</p>
-                </div>
-                <div class="step">
-                    <h6>05</h6>
-                    <p>Repair finishing work</p>
-                </div>
-                <div class="step">
-                    <h6>06</h6>
-                    <p>Acceptance of work</p>
-                </div>
-            </div>
-            <article>
-                <h5>1/6</h5>
-                <h4>Departure for measurements premises</h4>
-                <p>After your call, we go to you to consult and measure the premises of your apartment. 
-                    During our meeting, you can ask absolutely any number of questions. 
-                    An appraiser-appraiser leaves to measure the room. 
-                    He will advise you on the issues of repair technology, apartment design, terms of repair of the apartment as a whole and its individual stages.</p>
+        <section class="section_steps_working">
+            <article class="section_steps_working--article">
+                <h5>How we are working</h5>
+                <h3>6 steps to the goal</h3>
+                <article>
+                        <h5>1/6</h5>
+                        <h4>Departure for measurements premises</h4>
+                        <p>After your call, we go to you to consult and measure the premises of your apartment. 
+                            During our meeting, you can ask absolutely any number of questions. 
+                            An appraiser-appraiser leaves to measure the room. 
+                            He will advise you on the issues of repair technology, apartment design, terms of repair of the apartment as a whole and its individual stages.</p>
+                    </article>
             </article>
-            <img src="./assets/images/Mask Group.png" alt="этапы работы">
+            <article class="section_steps_working--article">           
+                <div class="section_steps_working--article--steps">
+                    <div class="section_steps_working--article--steps-item">
+                        <h6>01</h6>
+                        <p>Departure to room measurements</p>
+                    </div>
+                    <div class="section_steps_working--article--steps-item">
+                        <h6>02</h6>
+                        <p>Compilation estimates</p>
+                    </div>
+                    <div class="section_steps_working--article--steps-item">
+                        <h6>03</h6>
+                        <p>Development project design</p>
+                    </div>
+                    <div class="section_steps_working--article--steps-item">
+                        <h6>04</h6>
+                        <p>Purchasing Supplies</p>
+                    </div>
+                    <div class="section_steps_working--article--steps-item">
+                        <h6>05</h6>
+                        <p>Repair finishing work</p>
+                    </div>
+                    <div class="section_steps_working--article--steps-item">
+                        <h6>06</h6>
+                        <p>Acceptance of work</p>
+                    </div>
+                </div>
+                <img src="./assets/images/Mask Group.png" alt="этапы работы">
+            </article>
         </section>  
-        <section>
+        <section class="section_our_team">
             <h3>our team</h3>
             <img src="./assets/images/icon_team.png" alt="команда">
             <p>Our team has helped to become happier for more than 500 families and we are not going to stop</p>
-            <div class="our_team">
-                <div>
+            <div class="section_our_team--article">
+                <div class="section_our_team--article-item">
                     <img src="./assets/images/icon_idea.png" alt="иконка идея">
                     <img src="./assets/images/person1.png" alt="менеджер">
                     <h4>Dmitry Tulyakov</h4>
                     <p>Project manager</p>
                     <div class="my_label">Work experience 8 years</div>
                 </div>
-                <div>
+                <div class="section_our_team--article-item">
                     <img src="./assets/images/icon_pero.png" alt="иконка перо">
                     <img src="./assets/images/person2.png" alt="дизайнер">
                     <h4>Larisa Kotlyarova</h4>
                     <p>Designer</p>
                     <div class="my_label">Work experience 6 years</div>
                 </div>
-                <div>
+                <div class="section_our_team--article-item">
                     <img src="./assets/images/icon_portfolio.png" alt="иконка портфель">
                     <img src="./assets/images/person3.png" alt="мастер">
                     <h4>Alexey Efimov</h4>
                     <p>Foreman</p>
-                    <div class="my_label">Work experience 12 years</button>
+                    <div class="my_label">Work experience 12 years</div>
                 </div>
             </div>
             <p>Each employee of our company is a qualified full-time specialist with work experience of 6 years. 
                 We do not have laborers and guest workers, 
                 each employee carries out work corresponding to his specialty.</p>
         </section>
-        <section>
+        <section class="section_our_clients">
             <h3>our clients</h3>
             <img src="./assets/images/icon_clients.png" alt="клиенты">
             <p>80% of our customers recommend us to their friends and family.</p>
-            <div>
-                <article>
+            <div class="section_our_clients--element">
+                <article class="section_our_clients--element-item">
                     <div>
                         <img src="./assets/images/review1.png" alt="клиент 1">
                         <h4>Fedosova Maria Konstantinovna</h4>
@@ -337,15 +364,11 @@
                         TEAM MOBILE AND PROFESSIONAL. WORKS PERFORMED QUALITATIVELY WITHOUT COMMENTS. 
                         QUALITY SATISFIED. PRICES DEMOCRATIC. I RECOMMEND THESE MASTERS.</p>
                     <div class="my_label">
-                        <img src="./assets/images/icon_square.png" alt="иконка площадь">
-                        <p>40 m2</p>
-                    </div>
-                    <div class="my_label">
-                        <img src="./assets/images/icon_deadline.png" alt="иконка сроки">
-                        <p>48 DAYS</p>
+                        <p><img src="./assets/images/icon_square.png" alt="иконка площадь">40 m2</p>
+                        <p><img src="./assets/images/icon_deadline.png" alt="иконка сроки">48 DAYS</p>
                     </div>
                 </article>
-                <article>
+                <article class="section_our_clients--element-item">
                     <div>
                         <img src="./assets/images/review2.png" alt="клиент 2">
                         <h4>Afanasyev Sergey Alexandrovich</h4>
@@ -357,15 +380,11 @@
                         TEAM MOBILE AND PROFESSIONAL. WORKS PERFORMED QUALITATIVELY WITHOUT COMMENTS. 
                         QUALITY SATISFIED. PRICES DEMOCRATIC. I RECOMMEND THESE MASTERS.</p>
                     <div class="my_label">
-                        <img src="./assets/images/icon_square.png" alt="иконка площадь">
-                        <p>90 m2</p>
-                    </div>
-                    <div class="my_label">
-                        <img src="./assets/images/icon_deadline.png" alt="иконка сроки">
-                        <p>128 DAYS</p>
+                        <p><img src="./assets/images/icon_square.png" alt="иконка площадь">90 m2</p>
+                        <p><img src="./assets/images/icon_deadline.png" alt="иконка сроки">128 DAYS</p>
                     </div>
                 </article>
-                <article>
+                <article class="section_our_clients--element-item">
                     <div>
                         <img src="./assets/images/review3.png" alt="клиент 3">
                         <h4>Kiriev Egor Leonidovich</h4>
@@ -377,17 +396,13 @@
                         TEAM MOBILE AND PROFESSIONAL. WORKS PERFORMED QUALITATIVELY WITHOUT COMMENTS. 
                         QUALITY SATISFIED. PRICES DEMOCRATIC. I RECOMMEND THESE MASTERS.</p>
                     <div class="my_label">
-                        <img src="./assets/images/icon_square.png" alt="иконка площадь">
-                        <p>56 m2</p>
-                    </div>
-                    <div class="my_label">
-                        <img src="./assets/images/icon_deadline.png" alt="иконка сроки">
-                        <p>86 DAYS</p>
+                        <p><img src="./assets/images/icon_square.png" alt="иконка площадь">56 m2</p>
+                        <p><img src="./assets/images/icon_deadline.png" alt="иконка сроки">86 DAYS</p>
                     </div>
                 </article>
             </div>       
         </section>
-        <section>
+        <section class="section_form_question">
             <form action="#">
                 <h3>have any questions?</h3>
                 <fieldset>
@@ -399,14 +414,12 @@
 
                     <label for="question">Question</label>
                     <textarea name="question" id="question_area" cols="30" rows="10" placeholder="I want to know:"></textarea>
-
-                    <input type="checkbox" id="agreement"><label for="agreemnet">I agree to the processing of personal data</label>
-                    
-                    <button class="btn">Submit</button>
                 </fieldset>
+                <input type="checkbox" id="agreement"><label for="agreemnet">I agree to the processing of personal data</label>
+                <button class="btn">Submit</button>
             </form>
         </section>
-        <section>
+        <section class="section_contacts">
             <h3>Rostov-on-Don, Nansen St., 239 Shopping Center Decorum Tel +7 (928) 768 32 29</h3>
             <div>
                 <img src="./assets/images/icon_mail.png" alt="email">

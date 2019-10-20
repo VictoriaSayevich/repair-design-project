@@ -1,0 +1,87 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+}
+
+.wrapper div {
+    border: 2px solid black;
+    padding: 50px;
+    margin: 10px 0;
+}
+
+.wrapper .menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.wrapper1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.label {
+    grid-row: 1;
+}
+
+.input {
+    grid-row: 2;
+}
+
+.wrapper_circle {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 50%;
+}
+
+.wrapper_circle .circle {
+    width: 400px;
+	height: 400px;
+	-moz-border-radius: 200px;
+    -webkit-border-radius: 200px;
+    border: 3px solid red;
+	border-radius: 200px;
+}
+
+.wrapper_circle .circle_number {
+    width: 100px;
+	height: 100px;
+	background: red;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+}
+
+.numbers {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat (6, 1fr);
+}
+
+.wrapper_circle .circle_number.num1 {
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.wrapper_circle .circle_number.num2 {
+    grid-row: 3;
+    grid-column: 2;
+}
+
+.wrapper_circle .circle_number.num3 {
+    grid-row: 4;
+    grid-column: 3;
+}
+
+.wrapper_circle .circle_number.num4 {
+    grid-row: 5;
+    grid-column: 2;
+}
+
+.wrapper3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 1em;
+ }

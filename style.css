@@ -6,6 +6,36 @@
   font-family: 'FuturaBookC';
   src: url("./assets/fonts/futurabookc.otf") format("truetype");
   font-weight: lighter; }
+.section_online_control, .section_types_of_repair, .section_design_projects, .section_steps_working, .section_our_team, .section_our_clients, .section_form_question, .section_contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.btn, .btn_second {
+  background: #E3B873;
+  padding: 15px 0;
+  width: 15%;
+  border: none;
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+  border-radius: 2px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.7rem; }
+
+.menu_page_switcher, .second_screen .menu_projects_switcher {
+  display: flex; }
+
+.menu_page_switcher li, .second_screen .menu_projects_switcher li {
+  padding: 0 30px 0 0;
+  list-style: none; }
+
+.menu_page_switcher li a, .second_screen .menu_projects_switcher a {
+  text-decoration: none;
+  color: white;
+  letter-spacing: 1px;
+  text-transform: uppercase; }
+
 body {
   font-family: "FuturaBookC";
   color: #E3B873;
@@ -22,32 +52,44 @@ body {
     margin: 0; }
     body h1 span {
       color: #E3B873; }
+  body h2 {
+    color: #E3B873;
+    font-family: "Yeseva-one";
+    font-size: 1.3rem;
+    font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing: -0.8px;
+    margin: 0; }
+  body h3 {
+    color: #E3B873;
+    font-family: "Yeseva-one";
+    font-size: 1rem;
+    font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    margin: 0; }
+  body p {
+    font-family: "FuturaBookC";
+    font-weight: lighter;
+    font-size: 1.1rem;
+    line-height: 30px;
+    color: white; }
 
-header {
+header, footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding: 20px 30px; }
-  header a {
+  padding: 20px 50px; }
+  header a, footer a {
     color: #E3B873; }
-  header h4 {
+    header a p, footer a p {
+      color: #E3B873; }
+  header h4, footer h4 {
     text-transform: uppercase;
     font-size: 0.85rem;
     letter-spacing: 1px; }
-  header .btn {
+  header .btn, footer .btn {
     padding: 10px 30px; }
-
-.btn, .btn_second {
-  background: #E3B873;
-  padding: 15px 0;
-  width: 15%;
-  border: none;
-  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
-  border-radius: 2px;
-  color: white;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 0.7rem; }
 
 .btn_second {
   border: 1px solid white;
@@ -55,21 +97,18 @@ header {
   box-shadow: none; }
 
 .menu_page_switcher {
-  display: flex;
   font-size: 0.85rem; }
-  .menu_page_switcher li {
-    padding: 0 30px 0 0;
-    list-style: none; }
-    .menu_page_switcher li a {
-      text-decoration: none;
-      color: white;
-      letter-spacing: 1px;
-      text-transform: uppercase; }
-      .menu_page_switcher li a.menu_page_switcher--item--link-selected {
-        color: #E3B873; }
+  .menu_page_switcher li a.menu_page_switcher--item--link-selected {
+    color: #E3B873; }
 
 .main_screen {
-  padding: 30vh 0 30vh 30vh; }
+  background-image: url("./assets/images/main_img_with_effect.png");
+  background-repeat: no-repeat;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 200px 60px; }
   .main_screen img {
     position: absolute;
     opacity: 0.3;
@@ -77,6 +116,12 @@ header {
     right: 0;
     top: 90px;
     z-index: -1; }
+  .main_screen .img_effect {
+    width: 100%;
+    height: 100%;
+    align-items: stretch;
+    margin-left: 50px;
+    background: rgba(0, 0, 0, 0.7); }
   .main_screen aside {
     position: absolute;
     transform: rotate(90deg); }
@@ -86,15 +131,113 @@ header {
       border-top: 1px solid #E3B873;
       width: 40px; }
   .main_screen p {
-    width: 40%;
-    font-family: "FuturaBookC";
-    font-weight: lighter;
-    font-size: 1.1rem;
-    line-height: 30px;
-    color: white; }
+    width: 40%; }
   .main_screen .buttons {
     margin: 45px 0 0 0; }
     .main_screen .buttons .btn {
       margin-right: 20px; }
+
+.second_screen {
+  display: grid;
+  grid-template-columns: 3fr 5fr; }
+  .second_screen .article_completed_projects--menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+  .second_screen .menu_projects_switcher a {
+    color: #E3B873;
+    font-family: "Yeseva-one";
+    font-size: 0.9rem;
+    line-height: 19px;
+    letter-spacing: -0.8px; }
+    .second_screen .menu_projects_switcher a.menu_projects_switcher--item--link-selected {
+      border-bottom: 1px solid #E3B873;
+      padding-bottom: 3px; }
+    .second_screen .menu_projects_switcher a.menu_projects_switcher--item--link {
+      color: white;
+      opacity: 0.3; }
+
+.section_online_control form .my_fieldset {
+  display: flex;
+  border: none; }
+  .section_online_control form .my_fieldset div {
+    display: flex;
+    flex-direction: column; }
+
+.section_usp {
+  display: grid;
+  grid-template-columns: 5fr 3fr; }
+  .section_usp form {
+    grid-column: 2;
+    display: flex;
+    flex-direction: column; }
+    .section_usp form fieldset {
+      border: none;
+      display: flex; }
+  .section_usp .my_text {
+    display: flex;
+    align-items: center;
+    grid-column: 2; }
+
+.article_text ul {
+  background: white; }
+
+.section_types_of_repair--article {
+  display: flex; }
+
+.section_types_interior {
+  display: grid;
+  grid-template-columns: 3fr 5fr; }
+  .section_types_interior--img_elements {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
+    .section_types_interior--img_elements div {
+      padding: 0;
+      margin: 0; }
+    .section_types_interior--img_elements img {
+      margin: 0; }
+    .section_types_interior--img_elements .item1 {
+      margin-bottom: -40px; }
+    .section_types_interior--img_elements .item2 {
+      margin-top: -40px; }
+
+.section_design_projects--article {
+  display: flex; }
+
+.section_steps_working {
+  display: grid;
+  grid-template-columns: 3fr 5fr; }
+  .section_steps_working--article--steps {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; }
+
+.section_our_team--article {
+  display: flex; }
+  .section_our_team--article-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+.section_our_clients--element {
+  display: flex; }
+  .section_our_clients--element-item .my_label {
+    display: flex; }
+    .section_our_clients--element-item .my_label p {
+      display: flex; }
+
+.section_form_question form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .section_form_question form fieldset {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 3fr; }
+    .section_form_question form fieldset label {
+      grid-row: 1, 3; }
+    .section_form_question form fieldset input {
+      grid-row: 2; }
+    .section_form_question form fieldset textarea {
+      grid-row: 4; }
 
 /*# sourceMappingURL=style.css.map */
