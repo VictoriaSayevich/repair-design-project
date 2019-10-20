@@ -322,7 +322,7 @@
             </article>
             <article class="section_steps_working--article">           
                 <div class="section_steps_working--article--steps">
-                    <div class="section_steps_working--article--steps-item">
+                    <div class="section_steps_working--article--steps-item-selected">
                         <h6>01</h6>
                         <p>Departure to room measurements</p>
                     </div>
@@ -465,25 +465,34 @@
             </div>       
         </section>
         <section class="section_form_question">
-            <form action="#" class="my_form">
+            <!-- <form action="#" class="my_form"> -->
+            <form action="#">
                 <h3>have any questions?</h3>
                 <fieldset>
-                    <label for="name">Name</label>
-                    <input type="text" id="name" placeholder="What is yoir name:">
-
-                    <label for="phone">Phone</label>
-                    <input type="text" id="phone" placeholder="Your phone number:">
-
-                    <label for="question">Question</label>
-                    <textarea name="question" id="question_area" cols="30" rows="10" placeholder="I want to know:"></textarea>
+                    <div class="name_phone_form">
+                        <div class="label_input">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" placeholder="What is yoir name:">
+                        </div>
+                        <div class="label_input">
+                            <label for="phone">Phone</label>
+                            <input type="text" id="phone" placeholder="Your phone number:">
+                        </div> 
+                    </div>
+                    <div class="label_input">
+                        <label for="question">Question</label>
+                        <textarea name="question" id="question_area" placeholder="I want to know:"></textarea>
+                    </div>
                 </fieldset>
-                <input type="checkbox" id="agreement"><label for="agreemnet">I agree to the processing of personal data</label>
+                <div class="agreement">
+                    <input type="checkbox" id="agreement"><label for="agreemnet">I agree to the processing of personal data</label>
+                </div>
                 <button class="btn">Submit</button>
             </form>
         </section>
         <section class="section_contacts">
-            <h3>Rostov-on-Don, Nansen St., 239 Shopping Center Decorum Tel +7 (928) 768 32 29</h3>
-            <div>
+            <h3>Rostov-on-Don, Nansen St., 239 Shopping Center <br>Decorum Tel +7 (928) 768 32 29</h3>
+            <div class="icons"> 
                 <img src="./assets/images/icon_mail.png" alt="email">
                 <img src="./assets/images/icon_instagram.png" alt="Instagram">
             </div>
