@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="./style_mobile.css">
     <title>Repair Design Project</title>
 </head>
 
@@ -15,12 +15,12 @@
         <h4>IC "Repair Design Project"</h4>
         <nav>
             <ul class="menu_page_switcher">
-                <li class="menu_page_switcher--item"><a class="menu_page_switcher--item--link-selected" href="#">Home</a></li>
-                <li class="menu_page_switcher--item"><a class="menu_page_switcher--item--link" href="#">Projects</a></li>
-                <li class="menu_page_switcher--item"><a class="menu_page_switcher--item--link" href="#">Measurement</a></li>
-                <li class="menu_page_switcher--item"><a class="menu_page_switcher--item--link" href="#">Team</a></li>
-                <li class="menu_page_switcher--item"><a class="menu_page_switcher--item--link" href="#">Reviews</a></li>
-                <li class="menu_page_switcher--item"><a class="menu_page_switcher--item--link" href="#">Contacts</a></li>
+                <li class="menu_page_switcher--item"><a class="menu_page_switcher--item--link-selected" href="#" title="Home">Home</a></li>
+                <li class="menu_page_switcher--item"><a class="menu_page_switcher--item--link" href="#" title="Projects">Projects</a></li>
+                <li class="menu_page_switcher--item"><a class="menu_page_switcher--item--link" href="#" title="Measurent">Measurement</a></li>
+                <li class="menu_page_switcher--item"><a class="menu_page_switcher--item--link" href="#" title="Team">Team</a></li>
+                <li class="menu_page_switcher--item"><a class="menu_page_switcher--item--link" href="#" title="Reviews">Reviews</a></li>
+                <li class="menu_page_switcher--item"><a class="menu_page_switcher--item--link" href="#" title="Contacts">Contacts</a></li>
             </ul>
         </nav>
         <a href="tel: +7 (928) 768-32-39">
@@ -29,7 +29,6 @@
         <button class="btn">Request a call</button>
     </header>
     <section class="main_screen">
-        <!-- <div class="img_effect"></div> -->
         <article>
             <h1>Turkney repair in the <br>city of <span>rostov-on-don</span></h1>
             <p>Get ready-made turnkey repairs on time <br> with work time saving up to 45 days and 20% from <br> cost of materials due to the organization of work</p>
@@ -62,6 +61,9 @@
                 <div class="line"></div>
             </div>
             <p>Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction market we have made happy more than 1000 families</p>
+            <div class="slider mobile">
+                <img src="./assets/images/image 2.1.png" alt="фото интерьера1" title="Интерьер">
+            </div>
             <div class="article_completed_projects--menu">
                 <div>
                     <h3>City:</h3>
@@ -91,9 +93,8 @@
                 <i class="fas fa-long-arrow-alt-right slider_btn-item"></i>
             </div>
         </article>
-        <div class="slider">
-            <img src="./assets/images/image 2.1.png" alt="фото интерьера1">
-            <!-- <img src="./assets/images/image 2.png" alt="фото интерьера2"> -->
+        <div class="slider desktop">
+            <img src="./assets/images/image 2.1.png" alt="фото интерьера1" title="интерьер">
         </div>
     </section>
     <section class="section_online_control">
@@ -101,12 +102,12 @@
         <h2>online control</h3>
             <img class="icon" src="./assets/images/icon_control.png" alt="камера наблюдения">
             <div class="video">
-                <img src="./assets/images/image 6.png" alt="заглушка видео">
+                <img src="./assets/images/image 6.png" alt="заглушка видео" title="видео">
             </div>
             <div class="line"></div>
             <p>At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities!
                 Leave a request below and you will receive a link to the broadcast.</p>
-            <form action="#">
+            <form action="#" class="mobile_form">
                 <div class="my_fieldset">
                     <div>
                         <label for="name">Name</label><input type="text" id="name" placeholder="What is your name:">
@@ -114,9 +115,13 @@
                     <div>
                         <label for="phone">Phone</label><input type="text" id="phone" placeholder="Your phone number:">
                     </div>
+                    <div class="mobile agreement">
+                        <input type="checkbox" id="agreement"><span class="checkmark"></span>
+                        <label for="agreemnet">I agree to the processing of personal data</label>
+                    </div>
                     <button class="btn">Submit</button>
                 </div>
-                <div class="agreement">
+                <div class="agreement desktop">
                     <input type="checkbox" id="agreement"><span class="checkmark"></span>
                     <label for="agreemnet">I agree to the processing of personal data</label>
                 </div>
@@ -127,7 +132,7 @@
         <img class="icon" src="./assets/images/icon_repair.png" alt="ремонт">
         <article class="section_types_of_repair--article">
             <div class="section_types_of_repair--article-item">
-                <img src="./assets/images/image.png" alt="интерьер 1">
+                <img src="./assets/images/image.png" alt="интерьер 1" title="Интерьер">
                 <div class="article_text">
                     <article class="article_text--element">
                         <h3>Redecorating</h3>
@@ -145,7 +150,7 @@
                 </div>
             </div>
             <div class="section_types_of_repair--article-item">
-                <img src="./assets/images/image 3.png" alt="интерьер 2">
+                <img src="./assets/images/image 3.png" alt="интерьер 2" title="Интерьер">
                 <div class="article_text">
                     <article class="article_text--element">
                         <h3>Overhaul</h3>
@@ -163,7 +168,7 @@
                 </div>
             </div>
             <div class="section_types_of_repair--article-item">
-                <img src="./assets/images/image 3 (1).png" alt="интерьер 3">
+                <img src="./assets/images/image 3 (1).png" alt="интерьер 3" title="Интерьер">
                 <div class="article_text">
                     <article class="article_text--element">
                         <h3>Designer Repair</h3>
@@ -183,27 +188,25 @@
         </article>
     </section>
     <section class="section_usp">
-        <article class="wrapper_circle">
-            <div class="circle_container">
-                <div class="circle_container-item"></div>
-            </div>
-            <div class="numbers">
-                <div class="circle_number num1">
-                    <p class="num">01</p>
-                    <p class="num_text">Our speciadivst will arrive for measurements per day contact, or appoint a date convenient for you</p>
+        <article class="usp--left">
+            <p class="usp--left-p">Our specialist will arrive for measurements per day contact, or appoint a date convenient for you</p>
+            <p class="usp--left-p">Free metering</p>
+            <p class="usp--left-p">Free consultation</p>
+            <p class="usp--left-p">Get a cost estimate and the timing of your future repairs</p>
+            <div class="usp--left--circle">
+                <div class="usp--left--circle--wrp-litle">
+                    <p>01</p>
                 </div>
-                <div class="circle_number num2">
-                    <p class="num">02</p>
-                    <p class="num_text">Free metering</p>
+                <div class="usp--left--circle--wrp-litle">
+                    <p>02</p>
                 </div>
-                <div class="circle_number num3">
-                    <p class="num">03</p>
-                    <p class="num_text">Free consultation</p>
+                <div class="usp--left--circle--wrp-litle">
+                    <p>03</p>
                 </div>
-                <div class="circle_number num4">
-                    <p class="num">04</p>
-                    <p class="num_text">Get a cost estimate and the timing of your future repairs</p>
+                <div class="usp--left--circle--wrp-litle">
+                    <p>04</p>
                 </div>
+                <img src="./assets/images/image 6.1.png" alt="карусель">
             </div>
         </article>
         <form action="#" class="my_form">
@@ -224,7 +227,7 @@
             <button class="btn">Call the measurer</button>
         </form>
         <div class="my_text">
-            <img src="./assets/images/icon_coinsaver.png" alt="копилка">
+            <img src="./assets/images/icon_coinsaver.png" alt="копилка" title="Копилка">
             <p>Help save 10 - 20% of the cost of materials</p>
         </div>
     </section>
@@ -245,14 +248,16 @@
                 <li><a href="#" class="section_types_interior--article-menu-link">Eclecticism</a></li>
             </ul>
         </article>
+        <div class="background_block mobile"></div>
         <div class="section_types_interior--img_elements">
+            <img src="./assets/images/image_5.3_mobile.png" class="mobile" alt="Интерьер 1" title="Интерьер">
             <div class="item1">
-                <img src="./assets/images/image 5 (1).png" alt="интерьер 1">
-                <img src="./assets/images/image 5 (3).png" alt="интерьер 2">
+                <img src="./assets/images/image 5 (1).png" alt="интерьер 1" title="Интерьер">
+                <img src="./assets/images/image 5 (3).png" alt="интерьер 2" title="Интерьер">
             </div>
             <div class="item2">
-                <img src="./assets/images/image 5.png" alt="интерьер 3">
-                <img src="./assets/images/image 5 (2).png" alt="интерьер 4">
+                <img src="./assets/images/image 5.png" alt="интерьер 3" title="Интерьер">
+                <img src="./assets/images/image 5 (2).png" alt="интерьер 4" title="Интерьер">
             </div>
         </div>
     </section>
@@ -262,7 +267,7 @@
         <p>Design project not only helps to make the repair of your apartment more modern, but also significantly reduces the cost of materials and reduces the time of repair work.</p>
         <article class="section_design_projects--article">
             <div class="section_design_projects--article-item">
-                <img src="./assets/images/image.png" alt="интерьер 1">
+                <img src="./assets/images/image.png" alt="интерьер 1" title="Интерьер">
                 <div class="article_text">
                     <article class="article_text--element">
                         <h3>Mini</h3>
@@ -287,15 +292,15 @@
                             <li>Layout of furniture</li>
                             <li>Plan of ceilings</li>
                             <li>Floor Plan</li>
-                            <li>Electricians plan</li>
-                            <li>Lighting plan</li>
+                            <li class="desktop">Electricians plan</li>
+                            <li class="desktop">Lighting plan</li>
                         </ul>
                     </article>
                     <button class="btn">400 rub / m2</button>
                 </div>
             </div>
             <div class="section_design_projects--article-item">
-                <img src="./assets/images/image 3 (1).png" alt="интерьер 3">
+                <img src="./assets/images/image 3 (1).png" alt="интерьер 3" title="Интерьер">
                 <div class="article_text">
                     <article class="article_text--element">
                         <h3>Full</h3>
@@ -307,11 +312,11 @@
                             <li>Floor Plan</li>
                             <li>Electricians plan</li>
                             <li>Lighting plan</li>
-                            <li>Wall reamers</li>
-                            <li>3D visualization</li>
-                            <li>Bill of materials</li>
-                            <li>Departure for a selection of materials</li>
-                            <li>Furniture selection</li>
+                            <li class="desktop">Wall reamers</li>
+                            <li class="desktop">3D visualization</li>
+                            <li class="desktop">Bill of materials</li>
+                            <li class="desktop">Departure for a selection of materials</li>
+                            <li class="desktop">Furniture selection</li>
                         </ul>
                     </article>
                     <button class="btn">900 rub / m2</button>
@@ -330,32 +335,41 @@
                 <p class="p_steps">After your call, we go to you to consult and measure the premises of your apartment. During our meeting, you can ask absolutely any number of questions. An appraiser-appraiser leaves to measure the room. He will advise you on the issues
                     of repair technology, apartment design, terms of repair of the apartment as a whole and its individual stages.</p>
             </article>
+            <div class="slider_btn">
+                <i class="fas fa-long-arrow-alt-left slider_btn-item"></i>
+                <i class="fas fa-circle slider_btn-item slider_btn-item active"></i>
+                <i class="fas fa-circle slider_btn-item"></i>
+                <i class="fas fa-circle slider_btn-item"></i>
+                <i class="fas fa-circle slider_btn-item"></i>
+                <i class="fas fa-circle slider_btn-item"></i>
+                <i class="fas fa-long-arrow-alt-right slider_btn-item"></i>
+            </div>
         </article>
         <article class="section_steps_working--article">
             <div class="section_steps_working--article--steps">
                 <div class="section_steps_working--article--steps-item-selected">
                     <p class="number_step">01</p>
-                    <p>Departure to room measurements</p>
+                    <p class="text_step">Departure to room measurements</p>
                 </div>
                 <div class="section_steps_working--article--steps-item">
                     <p class="number_step">02</p>
-                    <p>Compilation estimates</p>
+                    <p class="text_step">Compilation estimates</p>
                 </div>
                 <div class="section_steps_working--article--steps-item">
                     <p class="number_step">03</p>
-                    <p>Development project design</p>
+                    <p class="text_step">Development project design</p>
                 </div>
                 <div class="section_steps_working--article--steps-item">
                     <p class="number_step">04</p>
-                    <p>Purchasing Supplies</p>
+                    <p class="text_step">Purchasing Supplies</p>
                 </div>
                 <div class="section_steps_working--article--steps-item">
                     <p class="number_step">05</p>
-                    <p>Repair finishing work</p>
+                    <p class="text_step">Repair finishing work</p>
                 </div>
                 <div class="section_steps_working--article--steps-item">
                     <p class="number_step">06</p>
-                    <p>Acceptance of work</p>
+                    <p class="text_step">Acceptance of work</p>
                 </div>
             </div>
             <img src="./assets/images/Mask Group.png" alt="этапы работы">
@@ -369,7 +383,7 @@
             <div class="section_our_team--article-item">
                 <img src="./assets/images/icon_idea.png" alt="иконка идея" class="icon">
                 <div class="article_text_team">
-                    <img src="./assets/images/person1.png" alt="менеджер">
+                    <img src="./assets/images/person1.png" alt="менеджер" title="Фото менеджер">
                     <article class="article_text_team--element">
                         <h4>Dmitry Tulyakov</h4>
                         <p>Project manager</p>
@@ -381,7 +395,7 @@
             <div class="section_our_team--article-item">
                 <img src="./assets/images/icon_pero.png" alt="иконка перо" class="icon">
                 <div class="article_text_team">
-                    <img src="./assets/images/person2.png" alt="дизайнер">
+                    <img src="./assets/images/person2.png" alt="дизайнер" title="Фото дизайнер">
                     <article class="article_text_team--element">
                         <h4>Larisa Kotlyarova</h4>
                         <p>Designer</p>
@@ -392,7 +406,7 @@
             <div class="section_our_team--article-item">
                 <img src="./assets/images/icon_portfolio.png" alt="иконка портфель" class="icon">
                 <div class="article_text_team">
-                    <img src="./assets/images/person3.png" alt="мастер">
+                    <img src="./assets/images/person3.png" alt="мастер" title="Фото мастер">
                     <article class="article_text_team--element">
                         <h4>Alexey Efimov</h4>
                         <p>Foreman</p>
@@ -414,7 +428,7 @@
                 <article class="article_text--element">
                     <div class="clients_name">
                         <div class="circle_client">
-                            <img src="./assets/images/review1.png" alt="клиент 1">
+                            <img src="./assets/images/review1.png" alt="клиент 1" title="Наш клиент">
                         </div>
                         <h4>Fedosova Maria <br>Konstantinovna</h4>
                     </div>
@@ -431,7 +445,7 @@
                 <article class="article_text--element">
                     <div class="clients_name">
                         <div class="circle_client">
-                            <img src="./assets/images/review2.png" alt="клиент 2">
+                            <img src="./assets/images/review2.png" alt="клиент 2" title="Наш клиент">
                         </div>
                         <h4>Afanasyev Sergey <br>Alexandrovich</h4>
                     </div>
@@ -447,7 +461,7 @@
                 <article class="article_text--element">
                     <div class="clients_name">
                         <div class="circle_client">
-                            <img src="./assets/images/review3.png" alt="клиент 3">
+                            <img src="./assets/images/review3.png" alt="клиент 3" title="Наш клиент">
                         </div>
                         <h4>Kiriev Egor <br>Leonidovich</h4>
                     </div>
@@ -462,7 +476,6 @@
         </div>
     </section>
     <section class="section_form_question">
-        <!-- <form action="#" class="my_form"> -->
         <form action="#">
             <h3>have any questions?</h3>
             <fieldset>
@@ -493,7 +506,7 @@
             <img src="./assets/images/icon_mail.png" alt="email">
             <img src="./assets/images/icon_instagram.png" alt="Instagram">
         </div>
-        <img src="./assets/images/map.png" alt="карта заглушка">
+        <img src="./assets/images/map.png" alt="карта заглушка" title="Карта">
     </section>
     <footer>
         <h4>IC "Repair Design Project"</h4>
@@ -507,7 +520,7 @@
                 <li class="menu_page_switcher--item"><a class="menu_page_switcher--item--link" href="#">Contacts</a></li>
             </ul>
         </nav>
-        <a href="tel: +7 (928) 768-32-39">
+        <a href="tel: +7 (928) 768-32-39" title="tel: +7 (928) 768-32-39">
             <p>+7 (928) 768-32-39</p>
         </a>
         <button class="btn">Request the call</button>
