@@ -1,12 +1,12 @@
 @font-face {
   font-family: 'Yeseva-one';
-  src: url("./assets/fonts/Yeseva One Regular.ttf") format("truetype");
+  src: url("../assets/fonts/Yeseva One Regular.ttf") format("truetype");
   font-weight: lighter;
 }
 
 @font-face {
   font-family: 'FuturaBookC';
-  src: url("./assets/fonts/futurabookc.otf") format("truetype");
+  src: url("../assets/fonts/futurabookc.otf") format("truetype");
   font-weight: lighter;
 }
 
@@ -180,7 +180,7 @@ footer .btn {
 
 .main_screen {
   position: relative;
-  background: url("./assets/images/main_img_with_effect.png") no-repeat;
+  background: url("../assets/images/main_img_with_effect.png") no-repeat;
   background-size: cover;
   height: 45vh;
   margin-left: 50px;
@@ -747,7 +747,7 @@ form fieldset {
   -ms-grid-columns: 7fr 5fr;
       grid-template-columns: 7fr 5fr;
   background: #fff;
-  background: url("./assets/images/img_interior.png") no-repeat;
+  background: url("../assets/images/img_interior.png") no-repeat;
   background-size: cover;
 }
 
@@ -1389,7 +1389,7 @@ form fieldset {
 }
 
 .section_contacts {
-  background-image: url("./assets/images/image 7.2.png");
+  background-image: url("../assets/images/image 7.2.png");
 }
 
 .section_contacts h3 {
