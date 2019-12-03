@@ -1,12 +1,12 @@
 @font-face {
     font-family: 'Yeseva-one';
-    src: url("./assets/fonts/Yeseva\ One\ Regular.ttf") format('truetype');
+    src: url("../assets/fonts/Yeseva\ One\ Regular.ttf") format('truetype');
     font-weight: lighter;
 }
 
 @font-face {
     font-family: 'FuturaBookC';
-    src: url("./assets/fonts/futurabookc.otf") format('truetype');
+    src: url("../assets/fonts/futurabookc.otf") format('truetype');
     font-weight: lighter;
 }
 
@@ -167,7 +167,7 @@ footer {
 
 .main_screen {
     position: relative;
-    background: url("./assets/images/main_img_with_effect.png") no-repeat;
+    background: url("../assets/images/main_img_with_effect.png") no-repeat;
     background-size: cover;
     height: 45vh;
     margin-left: 50px;
@@ -566,7 +566,7 @@ form {
     display: grid;
     grid-template-columns: 7fr 5fr;
     background: $background-color-article;
-    background: url("./assets/images/img_interior.png") no-repeat;
+    background: url("../assets/images/img_interior.png") no-repeat;
     background-size: cover;
     &--article {
         padding: 90px 90px 0;
@@ -1014,7 +1014,7 @@ form {
 
 .section_contacts {
     @extend %section-shared;
-    background-image: url("./assets/images/image\ 7.2.png");
+    background-image: url("../assets/images/image\ 7.2.png");
     h3 {
         padding: 40px 0 20px;
         text-align: center;
